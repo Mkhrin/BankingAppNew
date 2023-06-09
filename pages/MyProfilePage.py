@@ -12,10 +12,16 @@ class MyProfilePage(BasePage):
         sleep(3)
         logger.info('Clicked on My Profile')
 
-    # create a method that provide the my profile menus
-    def get_my_profile_menus(self):
-        my_profile_menu = self.driver.find_elements(By.CSS_SELECTOR, 'a.filter-container__term')
-        return {menu.text.lower() for menu in my_profile_menu}
+    # def user_summary_view(self):
+    #     self.driver.find_element(By.CSS_SELECTOR, "a.filter-container__term.selected").click()
+    #     sleep(3)
+    #     logger.info('Clicked on My Profile Summary')
+
+
+    # # create a method that provide the my profile menus
+    # def get_my_profile_menus(self):
+    #     my_profile_menu = self.driver.find_elements(By.CSS_SELECTOR, 'span.filter-container__text')
+    #     return {menu.text.lower() for menu in my_profile_menu}
         
 
     

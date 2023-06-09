@@ -19,8 +19,25 @@ def test_my_profile_menu(driver):
     # create an  instance of MyProfile class
     my_profile = MyProfilePage(driver)
     my_profile.select_my_profile()
-    # check if Log Out text is displayed
+    # check if My Profile text is displayed
     assert driver.find_element(By.CSS_SELECTOR, 'div.aside__row.active').text.upper() == 'MY PROFILE'
+
+
+
+
+# def test_my_profile_summary_menu(driver):
+#     # create an instance/object of LoginPage class
+#     login_page = LoginPage(driver)
+#     # call user_login method of the object
+#     login_page.user_login()
+#     sleep(5)
+   
+    # # create an  instance of MyProfile class
+    # my_profile = MyProfilePage(driver)
+    # my_profile.user_summary_view()
+    # # check if User Information text is displayed
+    # assert driver.find_element(By.CSS_SELECTOR, 'div.sub-heading').text.isinit() == 'User Information'
+
 
 
 # def test_my_profile_menus(driver):
